@@ -36,4 +36,4 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-        run: mvn -B verify org.sonarsource.scanner.maven:sonarmaven-plugin:5.0.0.4389:sonar -Dsonar.projectKey=jonk1821059_Lambda-Test_feceb45c-95ed-4173-a827-c8c1911fe3c2 -Dsonar.projectName='Lambda-Test'
+        run: mvn -B verify org.sonarsource.scanner.maven:sonarmaven-plugin:5.0.0.4389 -Dsonar.projectKey=jonk1821059_Lambda-Test_feceb45c-95ed-4173-a827-c8c1911fe3c2 -Dsonar.projectName='Lambda-Test'
